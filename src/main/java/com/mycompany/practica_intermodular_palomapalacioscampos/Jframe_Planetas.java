@@ -28,7 +28,7 @@ public class Jframe_Planetas extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        labelTipoEstrella = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -65,8 +65,8 @@ public class Jframe_Planetas extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
         jLabel1.setText("Estrella: Sol");
 
-        jLabel2.setFont(new java.awt.Font("Myanmar Text", 0, 14)); // NOI18N
-        jLabel2.setText("Tipo de Estrella: ");
+        labelTipoEstrella.setFont(new java.awt.Font("Myanmar Text", 0, 14)); // NOI18N
+        labelTipoEstrella.setText("Tipo de Estrella: ");
 
         jLabel3.setFont(new java.awt.Font("Myanmar Text", 0, 14)); // NOI18N
         jLabel3.setText("Radio:");
@@ -147,17 +147,17 @@ public class Jframe_Planetas extends javax.swing.JFrame {
 
         jLabel16.setText("jLabel16");
 
-        jLabel17.setText("jLabel17");
+        jLabel17.setText("---");
 
-        jLabel18.setText("jLabel18");
+        jLabel18.setText("---");
 
-        jLabel19.setText("jLabel19");
+        jLabel19.setText("---");
 
-        jLabel20.setText("jLabel20");
+        jLabel20.setText("---");
 
-        jLabel21.setText("jLabel21");
+        jLabel21.setText("---");
 
-        jLabel22.setText("jLabel22");
+        jLabel22.setText("---");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -173,7 +173,7 @@ public class Jframe_Planetas extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(labelTipoEstrella, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(22, 22, 22)))
@@ -207,34 +207,40 @@ public class Jframe_Planetas extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(ComboPlanetas, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(246, 246, 246)
-                                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGap(154, 154, 154))
+                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGap(167, 167, 167)))
+                                            .addGap(21, 21, 21))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(150, 150, 150)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(141, 141, 141)))
+                                .addGap(8, 8, 8)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
-                                    .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(198, 198, 198)
-                                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(162, 162, 162))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(175, 175, 175)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 887, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -261,24 +267,24 @@ public class Jframe_Planetas extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel19))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel20))
-                        .addGap(29, 29, 29)
-                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 21, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(60, 60, 60)
+                                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(37, 37, 37)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel22)))
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel22))
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addGap(109, 109, 109)
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(92, 92, 92)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(1340, 1340, 1340))
                     .addGroup(layout.createSequentialGroup()
@@ -291,11 +297,11 @@ public class Jframe_Planetas extends javax.swing.JFrame {
                         .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel8)
-                        .addGap(19, 19, 19)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LabelTipoSol, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(30, 30, 30)
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(LabelTipoSol, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelTipoEstrella, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(LabelRadioSol))
@@ -321,10 +327,98 @@ public class Jframe_Planetas extends javax.swing.JFrame {
     private void ComboPlanetasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboPlanetasActionPerformed
         // TODO add your handling code here:
         /*COMBOBOX DE PLANETAS, AQUÍ IRÁ CASI TODO EL CÓDIGO DE LA INTERFAZ*/
-       Conexionbbdd conexion = new Conexionbbdd();
-       String [] datosMarte =  conexion.conectarConsultarMarte();
-       jLabel17.setText(datosMarte [0]);
-        
+        String planetaSeleccionado = (String) ComboPlanetas.getSelectedItem();
+
+        Conexionbbdd conexion = new Conexionbbdd();
+
+        switch (planetaSeleccionado) {
+            case "Mercurio":
+                 String[] datosMercurio = conexion.conectarConsultarMercurio();
+                jLabel17.setText(datosMercurio[0]);
+                jLabel18.setText(datosMercurio[1]);
+                jLabel19.setText(datosMercurio[2]);
+                jLabel20.setText(datosMercurio[3]);
+                jLabel21.setText(datosMercurio[4]);
+                
+                
+                break;
+            case "Venus":
+                 String[] datosVenus = conexion.conectarConsultarVenus();
+                jLabel17.setText(datosVenus [0]);
+                jLabel18.setText(datosVenus [1]);
+                jLabel19.setText(datosVenus [2]);
+                jLabel20.setText(datosVenus [3]);
+                jLabel21.setText(datosVenus [4]);
+                
+                
+                break;
+            case "Tierra":
+                 String[] datosTierra= conexion.conectarConsultarTierra();
+                jLabel17.setText(datosTierra [0]);
+                jLabel18.setText(datosTierra [1]);
+                jLabel19.setText(datosTierra [2]);
+                jLabel20.setText(datosTierra[3]);
+                jLabel21.setText(datosTierra[4]);
+                
+                
+                
+                break;
+            case "Marte":
+                String[] datosMarte = conexion.conectarConsultarMarte();
+                jLabel17.setText(datosMarte[0]);
+                jLabel18.setText(datosMarte[1]);
+                jLabel19.setText(datosMarte[2]);
+                jLabel20.setText(datosMarte[3]);
+                jLabel21.setText(datosMarte[4]);
+
+                break;
+            case "Júpiter":
+                  String[] datosJupiter = conexion.conectarConsultarJupiter();
+                jLabel17.setText(datosJupiter[0]);
+                jLabel18.setText(datosJupiter[1]);
+                jLabel19.setText(datosJupiter[2]);
+                jLabel20.setText(datosJupiter[3]);
+                jLabel21.setText(datosJupiter[4]);
+                
+                
+                break;
+            case "Saturno":
+                 String[] datosSaturno = conexion.conectarConsultarSaturno();
+                jLabel17.setText(datosSaturno[0]);
+                jLabel18.setText(datosSaturno[1]);
+                jLabel19.setText(datosSaturno[2]);
+                jLabel20.setText(datosSaturno[3]);
+                jLabel21.setText(datosSaturno[4]);
+                
+                break;
+            case "Urano":
+               String[] datosUrano = conexion.conectarConsultarUrano();
+                jLabel17.setText(datosUrano[0]);
+                jLabel18.setText(datosUrano[1]);
+                jLabel19.setText(datosUrano[2]);
+                jLabel20.setText(datosUrano[3]);
+                jLabel21.setText(datosUrano[4]);
+                
+                
+                
+                break;
+            case "Neptuno":
+                 String[] datosNeptuno= conexion.conectarConsultarNeptuno();
+                jLabel17.setText(datosNeptuno[0]);
+                jLabel18.setText(datosNeptuno[1]);
+                jLabel19.setText(datosNeptuno[2]);
+                jLabel20.setText(datosNeptuno[3]);
+                jLabel21.setText(datosNeptuno[4]);
+                
+                
+                
+                break;
+            default:
+                System.out.println("Selecciona un planeta.");
+                break;
+        }
+
+
     }//GEN-LAST:event_ComboPlanetasActionPerformed
 
     /**
@@ -380,7 +474,6 @@ public class Jframe_Planetas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
@@ -394,5 +487,6 @@ public class Jframe_Planetas extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTable jTable1;
+    private javax.swing.JLabel labelTipoEstrella;
     // End of variables declaration//GEN-END:variables
 }
